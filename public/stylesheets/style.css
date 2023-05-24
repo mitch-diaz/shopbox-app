@@ -10,36 +10,41 @@ body {
 }
 
 /* =========== Nav link styles =========== */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
 nav {
   /* display: flex; */
   /* justify-content: center; */
   /* flex-direction: row; */
   /* width: 100%; */
-  max-width: 1200px;
-  margin: 40px 40px;
+  /* max-width: 1200px; */
+  /* margin: 40px 40px; */
   /* align-items: flex-end; */
 }
 
-.nav-items {
-  /* display: flex;
+.nav_items {
+  display: flex;
   justify-content: center;
-  width: 100%; */
-  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 1.2em;
 }
 
-.nav-items a {
+.nav_items a {
   /* padding-left: 10px; */
   font-weight: 900;
   font-size: 1.2rem;
 }
 
-a {
+.nav_link {
   text-decoration: none;
   color: black;
 }
 
-.text-link-hover:hover {
+.nav_link:hover {
   color: #005AD9;
   text-decoration: underline;
 }
