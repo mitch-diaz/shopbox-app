@@ -10,20 +10,29 @@ body {
 }
 
 /* =========== Nav link styles =========== */
+header {
+  padding: 40px;
+}
+
 .container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 nav {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-direction: row; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em;
   /* width: 100%; */
   /* max-width: 1200px; */
   /* margin: 40px 40px; */
   /* align-items: flex-end; */
+}
+
+.fa__logo {
+  margin: 0 auto;
 }
 
 .nav_items {
@@ -33,22 +42,43 @@ nav {
   gap: 1.2em;
 }
 
-.nav_items a {
-  /* padding-left: 10px; */
-  font-weight: 900;
-  font-size: 1.2rem;
-}
-
 .nav_link {
+  font-weight: 700;
+  font-size: 1rem;
   text-decoration: none;
   color: black;
+  padding: 4px;
 }
 
 .nav_link:hover {
   color: #005AD9;
-  text-decoration: underline;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #005AD9;
 }
 
+.nav_link--logo {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav_link--logo:hover {
+  color: #005AD9;
+}
+
+.circle {
+  font-weight: 900;
+  padding: 10px;
+  border: 1px solid #c6c6c6;
+  border-radius: 100%;
+}
+
+.square {
+  font-weight: 900;
+  padding: 10px;
+  background: #e4e4e4;
+  /* border-radius: 100%; */
+}
 
 /* ====== MARGIN FOR ALL LIST & DETAIL CONTENT PAGES */
 
@@ -64,7 +94,7 @@ nav {
   flex-direction: row;
   align-items: center;
   max-width: 1800px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 

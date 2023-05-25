@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>{{appTitle}}</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/stylesheets/style.css" />
         <link rel="stylesheet" href="/stylesheets/customers-purchases-pages.css" />
         <link rel="stylesheet" href="/stylesheets/login-signup-forms.css" />
@@ -15,9 +16,20 @@
         <header>
             <div class="container">
                 <nav class="nav">
+                    <div class="fa__logo">
+                      <a class="nav_link--logo" href="/">
+                        <i class="fa-solid fa-s circle"></i>
+                        <i class="fa-solid fa-h circle"></i>
+                        <i class="fa-solid fa-o circle"></i>
+                        <i class="fa-solid fa-p circle"></i>
+                        <i class="fa-solid fa-b square"></i>
+                        <i class="fa-solid fa-o square"></i>
+                        <i class="fa-solid fa-x square"></i>
+                      </a>
+                    </div>
                     <div class="nav_items">
                       {{!-- <img src="/images/logo.png" alt="logo"> --}}
-                      <a class="nav_link" href="/">Shopbox</a>
+                      {{!-- <a class="nav_link" href="/">Shopbox</a> --}}
                       {{#unless currentUser}}
                         <a class="nav_link" href="#">Products</a>
                         <a class="nav_link" href="#">Business Types</a>
