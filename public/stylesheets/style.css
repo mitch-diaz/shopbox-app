@@ -1,15 +1,23 @@
+/* ===== General and Shared Styles ===== */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
-  padding: 5px;
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   background: #ffffff;
   margin: 0;
 }
 
-/* =========== Nav link styles =========== */
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 header {
   padding: 40px;
 }
@@ -20,15 +28,19 @@ header {
   margin: 0 auto;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========== Nav link styles =========== */
+
 nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.5em;
-  /* width: 100%; */
-  /* max-width: 1200px; */
-  /* margin: 40px 40px; */
-  /* align-items: flex-end; */
 }
 
 .fa__logo {
@@ -77,7 +89,6 @@ nav {
   font-weight: 900;
   padding: 10px;
   background: #e4e4e4;
-  /* border-radius: 100%; */
 }
 
 /* ====== MARGIN FOR ALL LIST & DETAIL CONTENT PAGES */
@@ -87,32 +98,21 @@ nav {
 }
 
 
-/* ========= HOME PAGE STYLES ======== */
-
-.hero-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-width: 1800px;
-  margin-bottom: 50px;
-}
-
-
+/* ========= Hero section ======== */
 
 .hero-section-1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
   justify-content: space-evenly;
-  align-items: center;
-  width: 1800px;
+  margin-bottom: 50px;
 }
 
 .heroText-section-1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
   max-width: 600px;
 }
 
@@ -149,52 +149,27 @@ nav {
   color: rgb(255, 255, 255);
 }
 
-.heroImg-section-1-container {
+.heroImg-section-1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 600px;
 }
 
-.heroImg-section-1-container img {
-  width: 600px;
-  border-radius: 15px;
+.heroImg-section-1 img {
+  border-radius: 10px;
 }
 
-/* ==================================== */
-.parent-services-bkgnd-ext {
+/* ========= 2nd hero section ========== */
+.services-parent-container {
   background-color: #dee4e2;
 }
 
-.parent-services-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1800px;
-  background-color: #dee4e2;
-}
-
-.flex-valign-middle {
-  display: flex !important;
-  align-content: center !important;
-  align-items: center !important;
-  max-width: 1800px;
-}
-
-.bottom-valign-pad {
-  padding: 100px;
-  margin-left: 74.5px;
-  margin-right: 74.5px;
-}
-
-.pad-top-bot-h1 {
-  padding-top: 100px;
-  padding-bottom: 60px;
-  margin-left: 74.5px;
-  margin-right: 74.5px;
-}
-
-.get-tools-h1 h1 {
+.h1-get-tools {
   font-size: 4rem;
+  text-align: center;
+  margin: 50px 50px;
 }
 
 .services-container {
@@ -203,7 +178,6 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  max-width: 1800px;
 }
 
 .service-section-box {
