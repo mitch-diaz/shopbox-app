@@ -335,7 +335,8 @@ footer {
   justify-content: center;
   align-items: baseline;
   line-height: 30px;
-  width: auto;
+  width: 100%;
+  max-width: 200px;
 }
 
 .link-list ul {
@@ -395,8 +396,8 @@ footer {
 /* ================================================= */
 /* layouts optimized for browser width down to 500px */
 
-
-@media (max-width: 1020px) {
+/* Hero section */
+@media (max-width: 1028px) {
   .hero-section-1 {
     flex-direction: column-reverse;
     justify-content: center;
@@ -422,6 +423,7 @@ footer {
   }
 }
 
+/* Products ("Commerce", "Customers", "Banking", "Staff") */
 @media (max-width: 1028px) {
   .products-section-box {
     width: 100%;
@@ -431,5 +433,13 @@ footer {
   .products-text-section {
     width: 100%;
     max-width: 700px;
+  }
+}
+
+/* Footer */
+@media (max-width: 620px) {
+  .footer-link-list-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
