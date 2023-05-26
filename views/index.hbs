@@ -3,7 +3,7 @@
     <div class="hero-section-1">
 
         <div class="heroText-section-1">
-            <h1 class="title">Power your business with Shopbox.</h1>
+            <h1 class="hero__h1-title">Power your business with Shopbox.</h1>
             <p>Millions of brands of all sizes trust Shopbox to accept payments, build customer relationships, and grow their business in-store and online.</p>
             <div class="button" >
                 <a href="/auth/signup">Get Started</a> 
@@ -108,34 +108,35 @@
 
 </div>
 
-<div class="email__wrapper--display-flex container">
+<div class="email__container">
 
-    <div class="flex-contact-content-box">
+    <div class="email__wrapper--content">
 
-        <div class="contact-title">
-            <h2>Start selling with Shopbox.</h2>
-        </div>
+        <h2 class="h2__content-title">Start selling with Shopbox.</h2>
 
         <div class="contact-links">
-            <ul>
-                <li> <a href="#">▶︎ Start a free account</a> </li>
-                <li> <a href="#">▶︎ Talk to our sales team</a> </li>
-            </ul>
+            <div class="content-wrap">
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="#">Start a free account</a> 
+            </div>
+
+            <div class="content-wrap">
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="#">Talk to our sales team</a> 
+            </div>
+
         </div>
 
-        <div class="stay-in-touch">
-            <h3>Stay in touch.</h3>
-            <p>Subscribe to our email list to receive advice from other business owners, support articles, tips from industry experts, and more.</p>
-        </div>
+        <h3 class="h3__stay-in-touch">Stay in touch.</h3>
+        <p class="para__stay-in-touch">Subscribe to our email list to receive advice from other business owners, support articles, tips from industry experts, and more.</p>
 
         <div class="email">
             <input type="text" placeholder="Email address">
             <button type="submit">Submit</button>
         </div>
 
-        <div class="privacy">
-            <p>*Please refer to our <a href="#">Privacy Policy</a> for more details.</p>
-        </div>
+        <p class="privacy">*Please refer to our <a href="#">Privacy Policy</a> for more details.</p>
+        
 
     </div>
 
@@ -149,51 +150,64 @@
         <div class="link-list">
             <ul>
                 <li class="link-list-title">Products</li>
-                <li> <a href="#">Commerce</a> </li>
-                <li> <a href="#">Point of sale</a> </li>
-                <li> <a href="#">Payments</a> </li>
-                <li> <a href="#">Invoices</a> </li>
-                <li> <a href="#">Customers</a> </li>
-                <li> <a href="#">Marketing</a> </li>
-                <li> <a href="#">See more...</a> </li>
+                <li class="li"> <a href="#">Commerce</a> </li>
+                <li class="li"> <a href="#">Point of sale</a> </li>
+                <li class="li"> <a href="#">Payments</a> </li>
+                <li class="li"> <a href="#">Invoices</a> </li>
+                <li class="li"> <a href="#">Customers</a> </li>
+                <li class="li"> <a href="#">Marketing</a> </li>
+                <li class="li"> <a href="#">See more...</a> </li>
             </ul>
         </div>
 
         <div class="link-list">
             <ul>
                 <li class="link-list-title">Business Types</li>
-                <li> <a href="#">Food & Beverage</a> </li>
-                <li> <a href="#">Retail</a> </li>
-                <li> <a href="#">Beauty Salon</a> </li>
-                <li> <a href="#">Health & Fitness</a> </li>
-                <li> <a href="#">Professional Services</a> </li>
-                <li> <a href="#">See more...</a> </li>
+                <li class="li"> <a href="#">Food & Beverage</a> </li>
+                <li class="li"> <a href="#">Retail</a> </li>
+                <li class="li"> <a href="#">Beauty Salon</a> </li>
+                <li class="li"> <a href="#">Health & Fitness</a> </li>
+                <li class="li"> <a href="#">Professional Services</a> </li>
+                <li class="li"> <a href="#">See more...</a> </li>
             </ul>
         </div>
 
         <div class="link-list">
             <ul>
                 <li class="link-list-title">Resources</li>
-                <li> <a href="#">Pricing</a> </li>
-                <li> <a href="#">Why Shopbox</a> </li>
-                <li> <a href="#">Testimonials</a> </li>
-                <li> <a href="#">The Bottom Line</a> </li>
-                <li> <a href="#">Sales</a> </li>
-                <li> <a href="#">Support</a> </li>
-                <li> <a href="#">Seller Community</a> </li>
+                <li class="li"> <a href="#">Pricing</a> </li>
+                <li class="li"> <a href="#">Why Shopbox</a> </li>
+                <li class="li"> <a href="#">Testimonials</a> </li>
+                <li class="li"> <a href="#">The Bottom Line</a> </li>
+                <li class="li"> <a href="#">Sales</a> </li>
+                <li class="li"> <a href="#">Support</a> </li>
+                <li class="li"> <a href="#">Seller Community</a> </li>
             </ul>
         </div>
 
         <div class="link-list">
             <ul>
                 <li class="link-list-title">Shopbox</li>
-                <li> <a href="#">About</a> </li>
-                <li> <a href="#">Press & Media</a> </li>
-                <li> <a href="#">Careers</a> </li>
-                <li> <a href="#">Affiliates</a> </li>
-                <li> <a href="#">Partners</a> </li>
+                <li class="li"> <a href="#">About</a> </li>
+                <li class="li"> <a href="#">Press & Media</a> </li>
+                <li class="li"> <a href="#">Careers</a> </li>
+                <li class="li"> <a href="#">Affiliates</a> </li>
+                <li class="li"> <a href="#">Partners</a> </li>
+            </ul>
+            <ul class="ul-contact">
+                <li class="link-list-title">Contact</li>
+                <li class="li-contact">Customer support: 1 (800) 123-4567</li>
+                <li class="li-contact">Sales: 1 (800) 123-1234</li>
             </ul>
         </div>
+
+        {{!-- <div class="link-list">
+            <ul>
+                <li class="link-list-title">Contact</li>
+                <li class="li-contact">Customer support: 1 (800) 123-4567</li>
+                <li class="li-contact">Sales: 1 (800) 123-1234</li>
+            </ul>
+        </div> --}}
 
     </div>
 

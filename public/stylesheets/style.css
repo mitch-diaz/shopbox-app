@@ -38,6 +38,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 10px 0 10px;
 }
 
 /* =========== Nav link styles =========== */
@@ -84,7 +85,7 @@ nav {
   color: #005AD9;
 }
 
-.fa-solid {
+.logo {
   font-size: 2.5em;
   padding: 10px;
 }
@@ -106,20 +107,22 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: 50px;
+  padding: 0 10px 0 10px;
+  gap: 1em;
 }
 
 .heroText-section-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 45%;
   max-width: 600px;
 }
 
-.heroText-section-1 h1 {
-  font-size: 4rem;
+.hero__h1-title {
+  font-size: clamp(2rem, 4vw, 5rem);
   margin-bottom: 15px;
 }
 
@@ -155,7 +158,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   max-width: 600px;
 }
 
@@ -170,9 +173,9 @@ nav {
 }
 
 .h1-get-tools {
-  font-size: 4rem;
+  font-size: clamp(2rem, 4vw, 5rem);
   text-align: center;
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
 }
 
 .services-container {
@@ -236,84 +239,111 @@ nav {
   border-bottom-left-radius: 25px;
 }
 
-.email__wrapper--display-flex {
-  /* display: flex;
-  justify-content: center; */
-  }
+/* .email__container {} */
 
-.flex-contact-content-box {
-  margin-bottom: 15px;
+.email__wrapper--content {
+  padding: 60px 10px 60px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact-title {
-  margin: 120px 0 40px 40px;
-}
-
-.flex-contact-content-box h2 {
-  font-size: 3.9rem;
+.h2__content-title {
+  font-size: 3.5rem;
+  text-align: center;
+  /* margin-top: 0; */
 }
 
 .contact-links ul {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   list-style-type: none;
+  width: 100%;
+  max-width: 500px;
+  padding: 0;
 }
 
-.contact-links li {
-  margin-right: 30px;
+.fa-caret-right {
+  font-size: 1.6rem;
+  padding-right: 5px;
+  color: #006AFF;
+}
+
+.fa-caret-right:hover, 
+.content-wrap a:hover {
+  color: #005AD9;
+  text-decoration: none;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 450px;
+}
+
+.content-wrap {
+  display: flex;
 }
 
 .contact-links a {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 900;
   color: #006AFF;
 }
 
-.stay-in-touch h3 {
-  margin: 40px 0 15px 40px;
+/* .stay-in-touch {} */
+
+.h3__stay-in-touch {
+  font-size: 2.5rem;
+  margin-bottom: 0;
 }
 
-.stay-in-touch h3 {
-  font-size: 2.2rem;
-}
-
-.stay-in-touch p {
+.para__stay-in-touch {
   font-size: 1.2rem;
-  margin: 20px 0 20px 40px;
-  width: 800px;
+  text-align: center;
+  max-width: 600px;
+  width: auto;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
 }
 
 .email input {
-  width: 500px;
-  height: 50px;
+  width: 100%;
+  max-width: 500px;
+  height: 3.125rem;
   border: 2px solid #5f5f5f;
   border-radius: 6px;
-  margin:  10px 10px 30px 40px;
+  margin:  10px 10px 10px 0;
   padding-left: 20px;
 }
 
 .email button {
-  border-radius: 6px;
-  border: 1px solid #005AFF;
-  padding: 14px;
-  width: 6.1rem;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  /* width: 6.1rem; */
   background-color: #005AFF;
   color: white;
   font-size: 1.2rem;
 }
 
-.privacy p {
-  margin: 0px 0 20px 40px;
-}
-
-.privacy p a {
+.privacy a {
   color: #005AFF;
   font-weight: 700;
 }
 
 /* ==================================== */
 footer {
-  padding: 80px 0 80px 0;
+  padding: 80px 10px 80px 10px;
   background-color: #000;
 }
 
@@ -331,7 +361,7 @@ footer {
   justify-content: center;
   align-items: baseline;
   line-height: 30px;
-  width: 200px;
+  width: auto;
 }
 
 .link-list ul {
@@ -340,13 +370,24 @@ footer {
   padding: 0;
 }
 
-footer h4, .link-list a {
+.li a {
   color: white;
+  font-size: .9rem;
+}
+
+.li-contact {
+  color: white;
+  font-size: .9rem;
 }
 
 .link-list-title {
-  color: rgb(111, 111, 111);
+  font-size: 1.1em;
+  color: #6f6f6f;
   font-weight: 700;
+}
+
+.ul-contact {
+  margin-top: 20px;
 }
 
 .social-media-container {
@@ -355,10 +396,13 @@ footer h4, .link-list a {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .social-media-container p {
-  color: rgb(129, 129, 129);
+  color: #818181;
 }
 
 .social_media_icons {
