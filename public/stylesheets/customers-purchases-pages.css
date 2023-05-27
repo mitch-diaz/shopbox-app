@@ -74,6 +74,12 @@ main {
     color: white;
   }
 
+  .profile__buttons__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
 /* ======= CUSTOMER DETAIL VIEW STYLES ======== */
 
 .back-link {

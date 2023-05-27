@@ -1,19 +1,19 @@
 
 
-<div class="signup__container">
+<div class="form__parent__container">
 
-   <div class="title">
+   <div class="form__title">
       <h1>Let’s create your account.</h1>
       <p>
          Signing up for Shopbox is fast, easy, and free.<br/>
          No commitments or long-term contracts.
       </p>
    </div>
-   <div class="form__wrapper">
 
+   <div class="form__wrapper">
       <div class="form">
          <form action="/auth/signup" method="POST">
-            <div class="inputs-wrapper">
+            <div class="inputs__wrapper">
                <input class="input" type="text" name="firstName" placeholder="First Name">
 
                <input class="input" type="text" name="lastName" placeholder="Last Name">
@@ -23,7 +23,8 @@
                <input class="input" type="password" name="password" placeholder="Password">
             </div>
 
-            <div class="dropdowns-wrapper">
+            <div class="dropdowns__wrapper">
+               
                <div class="dropdown">
                   <label for="storeType">How do you sell?</label>
                   <select name="storeType" id="storeType">
