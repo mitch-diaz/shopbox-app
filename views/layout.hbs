@@ -5,10 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>{{appTitle}}</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/stylesheets/home-pg-styles.css" />
         <link rel="stylesheet" href="/stylesheets/customers-purchases-pages.css" />
         <link rel="stylesheet" href="/stylesheets/login-signup-forms.css" />
+        <link rel="stylesheet" href="/stylesheets/signup-form.css" />
         <link rel="stylesheet" href="/stylesheets/bookAndMovie.css">
     </head>
 
@@ -28,8 +34,6 @@
                       </a>
                     </div>
                     <div class="nav_items">
-                      {{!-- <img src="/images/logo.png" alt="logo"> --}}
-                      {{!-- <a class="nav_link" href="/">Shopbox</a> --}}
                       {{#unless currentUser}}
                         <a class="nav_link" href="#">Products</a>
                         <a class="nav_link" href="#">Business Types</a>
