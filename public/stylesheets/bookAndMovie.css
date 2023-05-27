@@ -1,5 +1,18 @@
 /* Create and Edit CSS */
 
+.page-heading button {
+  border-radius: 3px;
+  border: 1px solid #006AFF;
+  padding: 10px;
+  width: 11rem;
+  background-color: #006AFF;
+  font-size: 1.1em;
+  color: white;
+  margin-top: 15px;
+}
+
+
+/* Form related stuff */
 .content-container {
     display: flex;
     justify-content: flex-start;
@@ -8,17 +21,6 @@
     flex-wrap: wrap;
     padding: 2rem;
     padding-bottom: 3rem;
-  }
-
-  .page-heading button {
-    border-radius: 3px;
-    border: 1px solid #006AFF;
-    padding: 10px;
-    width: 11rem;
-    background-color: #006AFF;
-    font-size: 1.1em;
-    color: white;
-    margin-top: 15px;
   }
 
   .content-container h1{

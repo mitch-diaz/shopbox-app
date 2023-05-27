@@ -224,6 +224,7 @@ span {
 .cityInput:hover {border: 1px solid #005AFF;}
 .stateInput:hover {border: 1px solid #005AFF;}
 .zipInput:hover {border: 1px solid #005AFF;}
+
 /* ====== Button hovers */
 .add-new-customer-btn:hover {background-color: #005AD9;}
 .update-customer-btn:hover {background-color: #005AD9;}
@@ -231,9 +232,17 @@ span {
 .save-invoice-btn:hover {background-color: #005AD9;}
 .edit-movie-btn:hover {background-color: #005AD9;}
 .edit-book-btn:hover {background-color: #005AD9;}
+
 /* ====== Text link hovers */
-.details-link:hover {color: #005AD9;}
-.back-link:hover {color: #005AD9;}
+.details-link:hover {
+    color: #005AD9;
+    text-decoration: underline;
+}
+
+.back-link:hover {
+    color: #005AD9;
+    text-decoration: underline;
+}
 
 .delete-btn:hover {
     border-radius: 3px;
