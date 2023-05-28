@@ -1,5 +1,44 @@
-/* ======= CUSTOMER AND PURCHASE LIST VIEW STYLES ======== */
-.content { 
+/* LIST VIEW STYLES FOR CUSTOMER, BOOKS, MOVIES, & PURCHASES MAIN PAGES */
+
+/* Customers & Purchases shared styles */
+.content__titles__container-cust-purch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #4b4b4b;
+    margin-top: 30px;
+}
+
+.content-title-cust-purch {
+    font-size: 1.2em;
+    font-weight: 900;
+    width: 100%;
+}
+
+.flex__parent__container-list-display-cust-purch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #a4a4a4;
+}
+
+.content__wrapper-list-display-cust-purch {
+    width: 100%;
+}
+
+.flex__parent__container-list-display-cust-purch p {
+    font-size: 1em;
+    width: 95%;
+}
+
+.content__wrapper-list-display .hidden-title,
+.content__wrapper-list-display-cust-purch .hidden-title {
+    display: none;
+}
+
+
+/* Books & Movies shared styles */
+.page__content__container { 
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -8,56 +47,55 @@
     padding: 10px;
 }
 
-.page-heading {
-    margin: 0 0 40px 0;
+.content-heading {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 600px;
+    align-items: baseline;
+    gap: 5em;
 }
 
-.page-list-heading {
+.content__titles__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 1px solid #4b4b4b;
+    margin-top: 30px;
 }
 
-.list-head-title {
+.content-title {
     font-size: 1.2em;
     font-weight: 900;
     width: 60%;
 }
 
-.list-head-author {
-    font-size: 1.2em;
-    font-weight: 900;
+.content-title:nth-of-type(2),
+.content-title:nth-of-type(3) {
     width: 20%;
 }
 
-.list-head-details {
-    font-size: 1.2em;
-    font-weight: 900;
-    width: 20%;
-}
-
-.list-actual-display {
+.flex__parent__container-list-display {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #a4a4a4;
 }
 
-.list-actual-display p {
-    font-size: 1.1em;
+.flex__parent__container-list-display p {
+    font-size: 1em;
+    width: 95%;
 }
 
-.actual1 {
+.content__wrapper-list-display {
     width: 60%;
-    padding-right: 10px;
 }
 
-.actual2 {
+.content__wrapper-list-display:nth-of-type(2) {
     width: 20%;
-    padding-right: 20px;
 }
 
-.actual3 {
+.content__wrapper-list-display:nth-of-type(3) {
     width: 20%;
 }
 
@@ -71,7 +109,11 @@
     margin-top: 15px
 }
 
-.update-customer-btn, .add-new-customer-btn, .new-invoice-btn, .save-invoice-btn, .edit-movie-btn, .edit-book-btn {
+.update-customer-btn, 
+.add-item-btn, 
+.save-invoice-btn, 
+.edit-movie-btn, 
+.edit-book-btn {
     border-radius: 3px;
     border: 1px solid #006AFF;
     padding: 10px;
@@ -80,7 +122,7 @@
     font-size: 1.1em;
     color: white;
     margin-top: 15px;
-  }
+}
 
   .delete-btn {
     border-radius: 3px;
@@ -278,4 +320,56 @@ span {
     font-weight: 900;
     margin-top: 15px;
     color: rgb(0, 0, 0);
+}
+
+
+/* Books & Movies list media queries */
+
+@media (max-width: 680px) {
+    .flex__parent__container-list-display {
+        flex-direction: column;
+    }
+
+    .content-heading {
+        margin-bottom: 30px;
+    }
+
+    .content__titles__container {
+        display: none;
+    }
+
+    .content__wrapper-list-display,
+    .content__wrapper-list-display:nth-of-type(2),
+    .content__wrapper-list-display:nth-of-type(3) {
+        width: 100%;
+    }
+
+    .content__wrapper-list-display p {
+        margin: .5em 0 .5em 0;
+        font-size: 1.2rem;
+    }
+
+    .content__wrapper-list-display .hidden-title {
+        display: inline;
+    }
+}
+
+/* Customer & Purchases list media queries */
+@media (max-width: 680px) {
+    .flex__parent__container-list-display-cust-purch {
+        flex-direction: column;
+    }
+
+    .content__titles__container-cust-purch {
+        display: none;
+    }
+
+    .content__wrapper-list-display-cust-purch p {
+        margin: .5em 0 .5em 0;
+        font-size: 1.2rem;
+    }
+
+    .content__wrapper-list-display-cust-purch .hidden-title {
+        display: inline;
+    }
 }

@@ -28,7 +28,7 @@ header { padding: 40px; }
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 /* =========== Nav link styles =========== */
