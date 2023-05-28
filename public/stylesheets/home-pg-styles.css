@@ -28,6 +28,7 @@ header { padding: 40px; }
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 /* =========== Nav link styles =========== */
@@ -76,11 +77,6 @@ nav {
 }
 
 .square { background: #e4e4e4; }
-
-/* ====== MARGIN FOR ALL LIST & DETAIL CONTENT PAGES */
-
-.content { margin: 0 0 0 50px; }
-
 
 /* ========= Hero section ======== */
 
