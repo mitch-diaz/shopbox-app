@@ -85,14 +85,14 @@ input:hover {
 
 .small__input__group-flex-row {
   display: flex;
-  gap: 30px;
+  gap: 15px;
 }
 
 .label-input-col {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  width: auto;
+  width: 100%;
 }
 
 .dropdowns__wrapper {
