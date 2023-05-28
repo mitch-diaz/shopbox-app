@@ -191,19 +191,19 @@ span {
 
 /* ===== New Inoice */
 
-.new-invoice-container {
+/* .new-invoice-container {
     display: flex;
     justify-content: center;
-}
+} */
 
-.new-invoice-input{
+/* .new-invoice-input{
     border-radius: 2px;
     border: 1px solid #b3b3b3;
     padding: 10px;
     margin: 0 12px 0 0;
     width: 25rem;
     height: 3rem;
-}
+} */
 
 .invoice-total-input{
     border-radius: 2px;
