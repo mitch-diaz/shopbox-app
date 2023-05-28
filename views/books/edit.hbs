@@ -10,14 +10,21 @@
    
       <form action="/books/edit/{{id}}" method="POST">
          <div class="inputs__wrapper">
-            <label>Title:</label>
-            <input type="text" name="title" value="{{this.title}}">
+            
+            <div class="label-input-col">
+               <label>Title:</label>
+               <input type="text" name="title" value="{{this.title}}">
+            </div>
 
-            <label>Author:</label>
-            <input type="text" name="author" value="{{this.author}}">
+            <div class="label-input-col">
+               <label>Author:</label>
+               <input type="text" name="author" value="{{this.author}}">
+            </div>
 
-            <label>Genre:</label>
-            <input type="text" name="genre" value="{{this.genre}}">
+            <div class="label-input-col">
+               <label>Genre:</label>
+               <input type="text" name="genre" value="{{this.genre}}">
+            </div>
 
             <div class="small__input__group-flex-row">
                <div class="label-input-col">
@@ -37,7 +44,7 @@
             </div>
          </div>
 
-         <button class="submit-btn">Update</button>
+         <button class="submit-btn">Submit</button>
       </form>
 
       <a class="form-pg-text-link" href="/books/details/{{_id}}">>> Back to "Book Details"</a>
