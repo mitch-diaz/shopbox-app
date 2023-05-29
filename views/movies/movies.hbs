@@ -1,35 +1,35 @@
 
 
 {{#if currentUser}}
-<main class="content">
-    <div class="page-heading">
-        <h1>Movie List</h1>
+<main class="page__content__container">
+    <div class="content-heading">
+        <h2>Movie List</h2>
         <button class="add-item-btn"><a href="/movies/createMovie">Add Movie</a></button>
     </div>
 
-    <div class="page-list-heading">
-        <div class="list-head" id="title">
+    <div class="content__titles__container">
+        <div class="content-title">
             <p>Title</p>
         </div>
-        <div class="list-head" id="genre">
+        <div class="content-title">
             <p>Genre</p>
         </div>
-        <div class="list-head">
-            <p> </p>
+        <div class="content-title">
+            <p>Details</p>
         </div>
     </div>
 
     {{#each movie}}
-    <div class="list-actual-display">
-        <div class="actual1">
-            <p>{{title}}</p>
+    <div class="flex__parent__container-list-display">
+        <div class="content__wrapper-list-display">
+            <p><span class="hidden-title">Title: </span>{{title}}</p>
         </div>
 
-        <div class="actual2">
-            <p>{{genre}}</p>
+        <div class="content__wrapper-list-display">
+            <p><span class="hidden-title">Genre: </span>{{genre}}</p>
         </div>
 
-        <div class="actual3">
+        <div class="content__wrapper-list-display">
             <p><a class="details-link" href="/movies/details/{{_id}}">See movie details</a></p>
         </div> 
 
