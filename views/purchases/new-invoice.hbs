@@ -13,7 +13,7 @@
 
                 <div class="label-input-col">
                     <label>Customer:</label>
-                    <select class="new-invoice-input" name="customer" id="select">
+                    <select name="customer" id="select">
                         <option value="" disabled="disabled" selected="selected">--Select a customer--</option>
                         {{#each customers}}
                             <option value="{{_id}}">{{firstName}} {{lastName}} </option>
@@ -23,17 +23,17 @@
 
                 <div class="label-input-col">
                     <label>Create an invoice ID:</label>
-                    <input class="new-invoice-input" type="text" name="invoiceId" placeholder="ex: 001">
+                    <input type="text" name="invoiceId" placeholder="ex: 001">
                 </div>
 
                 <div class="label-input-col">
                     <label>Order date:</label>
-                    <input class="new-invoice-input" type="date" name="invoiceDate">
+                    <input type="date" name="invoiceDate">
                 </div>
 
                 <div class="label-input-col">
                     <label>Select a book:</label>
-                    <select class="new-invoice-input" name="books" id="selectBook">
+                    <select name="books" id="selectBook">
                         <option class="disabled" value="" disabled="disabled" selected="selected">--books list--</option>
                         {{#each books}}
                             <option value="{{_id}}" data-price="{{price}}" class="selectBook">{{title}} ${{price}}</option>
@@ -43,7 +43,7 @@
 
                 <div class="label-input-col">
                     <label>Select a movie:</label>
-                    <select class="new-invoice-input" name="movies" id="selectMovie">
+                    <select name="movies" id="selectMovie">
                         <option value="" disabled="disabled" selected="selected">--Choose a movie--</option>
                         {{#each movies}}
                             <option value="{{_id}}" data-price="{{price}}" class="selectMovie">{{title}} ${{price}}</option>

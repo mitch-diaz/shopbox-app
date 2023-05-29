@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="/stylesheets/customers-purchases-pages.css" />
         <link rel="stylesheet" href="/stylesheets/bookAndMovie.css">
         <link rel="stylesheet" href="/stylesheets/form-styles.css" />
+        <link rel="stylesheet" href="/stylesheets/media-queries.css" />
+        
     </head>
 
     <body>
@@ -41,18 +43,18 @@
                         <a class="nav_link" href="#">Resources</a>
                       {{/unless}}
                       {{#if currentUser}}
-                        <a class="nav_link" href="/customers">Customers</a>
-                        <a class="nav_link" href="/books">Books</a>
-                        <a class="nav_link" href="/movies">Movies</a>
-                        <a class="nav_link" href="/purchases">Purchases</a>
+                        <a class="nav_link_user" href="/customers">Customers</a>
+                        <a class="nav_link_user" href="/books">Books</a>
+                        <a class="nav_link_user" href="/movies">Movies</a>
+                        <a class="nav_link_user" href="/purchases">Purchases</a>
                       {{/if}}
                       {{#unless currentUser}}
-                        <a class="nav_link" href="/auth/signup">Sign up</a>
-                        <a class="nav_link" href="/auth/login">Login</a>
+                        <a class="auth-link sign-up" href="/auth/signup">Sign up</a>
+                        <a class="auth-link login" href="/auth/login">Login</a>
                       {{/unless}}
                       {{#if currentUser}}
-                        <a class="nav_link" href="/auth/logout">Logout</a>
-                        <a class="nav_link" href="/auth/profile">Profile</a>
+                        <a class="auth-link profile" href="/auth/profile">Profile</a>
+                        <a class="auth-link logout" href="/auth/logout">Logout</a>
                       {{/if}}
                     </div>
                 </nav>

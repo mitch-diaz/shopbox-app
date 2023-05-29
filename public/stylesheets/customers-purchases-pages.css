@@ -109,17 +109,14 @@
     margin-top: 15px
 }
 
-.update-customer-btn, 
 .add-item-btn, 
-.save-invoice-btn, 
-.edit-movie-btn, 
-.edit-book-btn {
-    border-radius: 3px;
-    border: 1px solid #006AFF;
+.edit-btn {
+    border-radius: 4px;
+    border: none;
     padding: 10px;
     width: 11rem;
-    background-color: #006AFF;
-    font-size: 1.1em;
+    background-color: #292929;
+    font-size: 1rem;
     color: white;
     margin-top: 15px;
 }
@@ -130,7 +127,7 @@
     padding: 10px;
     width: 11rem;
     background-color: #ff00002e;
-    font-size: 1.1em;
+    font-size: 1rem;
     font-weight: 900;
     margin-top: 15px;
     color: rgb(0, 0, 0);
@@ -255,49 +252,25 @@ span {
     height: 3.5rem;
 }
 
-/* ===== New Inoice */
+/* ====== Button hovers */
+/* .add-new-customer-btn:hover {background-color: #005AD9;}
+.new-invoice-btn:hover {background-color: #005AD9;}
+.save-invoice-btn:hover {background-color: #005AD9;} */
 
-/* .new-invoice-container {
-    display: flex;
-    justify-content: center;
-} */
-
-/* .new-invoice-input{
-    border-radius: 2px;
-    border: 1px solid #b3b3b3;
-    padding: 10px;
-    margin: 0 12px 0 0;
-    width: 25rem;
-    height: 3rem;
-} */
-
-.invoice-total-input{
-    border-radius: 2px;
-    border: 1px solid #b3b3b3;
-    padding: 10px;
-    margin: 0 12px 0 0;
-    width: 11rem;
-    height: 3rem;
+.edit-btn:hover,
+.add-item-btn:hover {
+    background-color: #292929d6;
 }
 
-/* ========= ALL HOVER STYLES ========= */
-/* ====== Input hovers */
-.new-invoice-input:hover {border: 1px solid #005AFF;}
-.nameInput:hover {border: 1px solid #005AFF;}
-.emailInput:hover {border: 1px solid #005AFF;}
-.addressInput:hover {border: 1px solid #005AFF;}
-.apartNumInput:hover {border: 1px solid #005AFF;}
-.cityInput:hover {border: 1px solid #005AFF;}
-.stateInput:hover {border: 1px solid #005AFF;}
-.zipInput:hover {border: 1px solid #005AFF;}
 
-/* ====== Button hovers */
-.add-new-customer-btn:hover {background-color: #005AD9;}
-.update-customer-btn:hover {background-color: #005AD9;}
-.new-invoice-btn:hover {background-color: #005AD9;}
-.save-invoice-btn:hover {background-color: #005AD9;}
-.edit-movie-btn:hover {background-color: #005AD9;}
-.edit-book-btn:hover {background-color: #005AD9;}
+/* .update-customer-btn, 
+.add-item-btn, 
+.save-invoice-btn, 
+.edit-movie-btn, 
+.edit-book-btn */
+
+
+
 
 /* ====== Text link hovers */
 .details-link:hover {
@@ -320,56 +293,4 @@ span {
     font-weight: 900;
     margin-top: 15px;
     color: rgb(0, 0, 0);
-}
-
-
-/* Books & Movies list media queries */
-
-@media (max-width: 680px) {
-    .flex__parent__container-list-display {
-        flex-direction: column;
-    }
-
-    .content-heading {
-        margin-bottom: 30px;
-    }
-
-    .content__titles__container {
-        display: none;
-    }
-
-    .content__wrapper-list-display,
-    .content__wrapper-list-display:nth-of-type(2),
-    .content__wrapper-list-display:nth-of-type(3) {
-        width: 100%;
-    }
-
-    .content__wrapper-list-display p {
-        margin: .5em 0 .5em 0;
-        font-size: 1.2rem;
-    }
-
-    .content__wrapper-list-display .hidden-title {
-        display: inline;
-    }
-}
-
-/* Customer & Purchases list media queries */
-@media (max-width: 680px) {
-    .flex__parent__container-list-display-cust-purch {
-        flex-direction: column;
-    }
-
-    .content__titles__container-cust-purch {
-        display: none;
-    }
-
-    .content__wrapper-list-display-cust-purch p {
-        margin: .5em 0 .5em 0;
-        font-size: 1.2rem;
-    }
-
-    .content__wrapper-list-display-cust-purch .hidden-title {
-        display: inline;
-    }
 }
