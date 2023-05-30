@@ -202,6 +202,11 @@ button a { color: white; }
     gap: 25px;
 }
 
+/* .details__container {
+    width: 100%;
+    max-width: 500px;
+} */
+
 .details_heading_wrapper {
     margin-bottom: 20px;
     border-bottom: 1px solid #a4a4a4;
