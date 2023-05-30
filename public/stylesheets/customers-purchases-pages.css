@@ -202,14 +202,17 @@ button a { color: white; }
     gap: 25px;
 }
 
-/* .details__container {
+.details__container {
     width: 100%;
-    max-width: 500px;
-} */
+    min-width: 300px;
+    max-width: 600px;
+}
 
 .details_heading_wrapper {
     margin-bottom: 20px;
     border-bottom: 1px solid #a4a4a4;
+    /* width: 100%;
+    min-width: 300px; */
 }
 
 .details_flex_row {
@@ -242,5 +245,5 @@ button a { color: white; }
 
 .detail-info {
     font-size: 1.2em;
-    /* line-height: 1.5em; */
+    margin: 10px;
 }
