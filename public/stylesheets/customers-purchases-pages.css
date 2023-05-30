@@ -1,6 +1,10 @@
 /* LIST VIEW STYLES FOR CUSTOMER, BOOKS, MOVIES, & PURCHASES MAIN PAGES */
 
 /* Customers & Purchases shared styles */
+main {
+    padding: 0 10px 0;
+}
+
 .content__titles__container-cust-purch {
     display: flex;
     flex-direction: row;
@@ -118,19 +122,40 @@
     background-color: #292929;
     font-size: 1rem;
     color: white;
-    margin-top: 15px;
+    margin: 15px 0 15px;
 }
 
   .delete-btn {
-    border-radius: 3px;
-    border: 2px solid #ed2e2e;
+    border: none;
     padding: 10px;
     width: 11rem;
-    background-color: #ff00002e;
-    font-size: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    font-size: 1.1rem;
     font-weight: 900;
     margin-top: 15px;
-    color: rgb(0, 0, 0);
+    color: #000
+}
+
+.fa-trash-can {
+    color: #000;
+    padding-right: 5px;
+    font-size: 1.5rem;
+}
+
+.warning {
+    font-size: .8rem;
+}
+
+.delete-btn:hover {
+    padding: 10px;
+    width: 11rem;
+    background-color: #f000006c;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 900;
+    margin-top: 15px;
+    cursor: pointer;
 }
 
   button a {
@@ -284,14 +309,4 @@ span {
     text-decoration: underline;
 }
 
-.delete-btn:hover {
-    border-radius: 3px;
-    border: 2px solid #ff0000;
-    padding: 10px;
-    width: 11rem;
-    background-color: #ff7700;
-    font-size: 1.1em;
-    font-weight: 900;
-    margin-top: 15px;
-    color: rgb(0, 0, 0);
-}
+

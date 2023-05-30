@@ -2,7 +2,7 @@
 <main class="content">
     
     <div class="page-heading">
-        <h1>Customer Information</h1>
+        <h2>Customer Information</h2>
         <p> <a class="back-link" href="/customers">Back to customers list</a> </p>
     </div>
 
@@ -32,7 +32,9 @@
             <button class="edit-btn"> <a href="/customers/{{_id}}/update-customer">Update customer info</a> </button>
 
             <form action="/customers/delete/{{_id}}" method="POST">
-                <button class="delete-btn">Delete this customer</button>
+                {{!-- <button class="delete-btn">Delete this customer</button> --}}
+                <button class="delete-btn"><i class="fa-regular fa-trash-can"></i> Delete?</button>
+                <p class="warning"><i class="fa-solid fa-triangle-exclamation"></i> Deleting this record cannot be undone</p>
             </form>
 
         </div>
