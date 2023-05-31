@@ -392,7 +392,7 @@ nav {
 /* ======= Footer ========== */
 footer {
   padding: 80px 10px 40px 10px;
-  background-color: #000;
+  background-color: #181818;
 }
 
 .footer-link-list-wrapper {
@@ -461,14 +461,11 @@ li a:hover {
 .social_media_icons {
   display: flex;
   flex-direction: row;
-  height: 25px;
-  width: auto;
   gap: 1em;
 }
 
-.icon_height-color {
-  height: 25px;
-  background-color: #e4e4e4;
+.fa-brands {
+  font-size: 1.2rem;
+  color: #818181;
+  background-color: transparent;
 }
-
-#Layer_1 { filter: brightness(0.5); }
