@@ -44,7 +44,6 @@ span {
     display: none;
 }
 
-
 /* Books & Movies main page shared styles */
 .page__content__container { 
     margin: 0 auto;
@@ -211,8 +210,6 @@ button a { color: white; }
 .details_heading_wrapper {
     margin-bottom: 20px;
     border-bottom: 1px solid #a4a4a4;
-    /* width: 100%;
-    min-width: 300px; */
 }
 
 .details_flex_row {

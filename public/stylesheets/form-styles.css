@@ -146,6 +146,7 @@ select:hover {
   background-color: #e2e2e2;
 }
 
+/* Form button styles */
 .submit-btn {
   border-radius: 5px;
   border: none;
@@ -161,19 +162,13 @@ select:hover {
   background-color: #005AD9;
 }
 
-
-/* ======= CHANGE PASSWORD ======= */
-
-
-/* =-=-=-=-=-=-=-=-= Profile page styles 👇 */
-
-.btn {
+.update-profile {
   background-color: #006AFF;
   color: white;
-  border-radius: 5px;
+  border-radius: 4px;
   border: none;
-  padding: 15px;
-  width: 200px;
+  padding: 10px;
+  width: 11rem;
   font-size: 1.1em;
   margin-top: 15px;
 }
@@ -181,15 +176,13 @@ select:hover {
 .change-password {
   background-color: #0c1832;
   color: white;
-  border-radius: 5px;
+  border-radius: 4px;
   border: none;
-  padding: 15px;
-  width: 200px;
+  padding: 10px;
+  width: 11rem;
   font-size: 1.1em;
   margin-top: 15px;
 }
 
-.update-profile-btn:hover {background-color: #005AD9;}
-.change-password-btn:hover {background-color: #0e4365;}
-
-/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=👆 */
+.update-profile:hover {background-color: #005AD9;}
+.change-password:hover {background-color: #0e4365;}
