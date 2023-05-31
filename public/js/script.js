@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if(bookOptions[i].selected){
           let book = bookOptions[i].getAttribute('data-price');
           totalPrice.book = Number(book);
-          console.log(book)
+          // console.log(book)
         }
         totalValue(totalPrice.book, totalPrice.movie)
       }
