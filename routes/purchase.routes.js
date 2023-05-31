@@ -16,7 +16,11 @@ router.get('/purchases/create', (req, res, next) => {
         .then((booksFromDb) => {
             Movie.find()
             .then((moviesFromDb) => {
-            res.render('purchases/new-invoice', {movies: moviesFromDb, customers: customerFromDB, books: booksFromDb});
+                res.render('purchases/new-invoice', {
+                    movies: moviesFromDb, 
+                    customers: customerFromDB, 
+                    books: booksFromDb
+                });
             })
         })
     })
@@ -53,15 +57,12 @@ router.post('/purchases/create', (req, res ,next) => {
             res.redirect('/purchases');
         })
     })
-    
 });
 
 
 // =========== READ LIST OF INVOICES ============
 
 router.get('/purchases', (req, res, next) => {
-
-    
     Purchase.find()
     .populate('customers')
     .then((invoicesFromDb) => {
@@ -104,7 +105,5 @@ router.post('/purchases/delete/:purchaseId', (req, res, next) => {
     .then(() => {res.redirect('/purchases')})
     .catch(err => console.log(err));
 });
-
-
 
 module.exports = router;
