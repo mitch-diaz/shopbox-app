@@ -20,8 +20,7 @@ const bodyParser = require('body-parser');
 require("./config")(app);
 
 const capitalize = require("./utils/capitalize");
-const projectName = "shopbox-app";
-
+const projectName = "Shopbox";
 app.locals.appTitle = `${capitalize(projectName)} created with IronLauncher`;
 
 app.use(bodyParser.json());
@@ -31,7 +30,6 @@ app.use((req, res, next) => {
   res.locals.currentUser = req.session.user
   next();
 })
-
 
 
 // 👇 Start handling routes here (👉 FROM ORIGINAL "Project-2-Shopbox")
@@ -45,16 +43,6 @@ app.use('/', require('./routes/customer.routes'))
 app.use('/', require('./routes/purchase.routes'))
 app.use("/", require("./routes/book.routes"))
 app.use("/", require("./routes/movie.routes"))
-
-
-// =======================================================
-// 👇 Start handling routes here (👉 THIS IS FROM NEW IRONLAUNCHER)
-// const indexRoutes = require("./routes/index.routes");
-// app.use("/", indexRoutes);
-
-// const authRoutes = require("./routes/auth.routes");
-// app.use("/auth", authRoutes);
-// =======================================================
 
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
