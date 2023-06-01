@@ -105,7 +105,6 @@ input:hover {
 .radio__input__group-flex-row {
   display: flex;
   gap: 25px;
-  height: 30px;
 }
 
 .radio {
