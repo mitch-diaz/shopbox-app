@@ -206,7 +206,7 @@ router.post('/change-password', (req, res, next)=>{
 
   User.findById(req.session.user._id)
   .then(resultFromDB => {
-     if (js.compareSync(req.body.oldpass, resultFromDB.password)) {
+     if (bcryptjs.compareSync(req.body.oldpass, resultFromDB.password)) {
       const saltRounds = 10;
       bcryptjs
       .genSalt(saltRounds)
